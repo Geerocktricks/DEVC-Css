@@ -1,27 +1,36 @@
 body{
     background-color: rgba(9, 5, 14, 0.3);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.2em;
+}
+span{
+    font-size: .8em
 }
 h1,p{
     text-align: center;
 }
+h1,h2{
+    color: rgb(84, 112, 188);
+    text-shadow: 0 1px 1px  rgba(0, 0,0, .7);
+}
+h1{
+    text-transform: uppercase;
+    margin-top: 20px;
+}
 .item{
     padding: 20px;
-    border-bottom: 1px solid rgba(229, 229, 229,.3);
-    border-right: 1px solid rgba(229, 229, 229,.3);
+    box-shadow: inset 0 7px 120px 2px rgba(0, 0,0, .3);
     margin-top: 20px;
     transition: transform 1s ease-in-out;
 }
 .item:hover{
-    border: 1px solid rgba(0,0 green,0 blue,.3 alpha);
     cursor: pointer;
-    box-shadow: 0 2px 10px 2px rgba(0, 0,0, .2);
-    border: none;
+    box-shadow:inset 0 2px 10px 2px rgba(0, 0,0, .2);
     transform: scale(1.1);
     background-color: rgba(222, 220, 220, 0.2);
 }
-.item:nth-child(1){
-    /* border-right: 1px solid blue; */
+li a{
+    text-decoration: none;
 }
 
 /* ****************************************Anchor Pseudo-classes****************************************** */
@@ -47,20 +56,7 @@ a:link {
   }
 
   hr{
-    overflow: visible; /* For IE */
-    height: 30px;
-    border-style: solid;
-    border-color: rgba(0, 0,0, .4);
-    border-width: 1px 0 0 0;
-    border-radius: 20px;
-}
-hr:before { 
-    display: block;
-    content: "";
-    height: 30px;
-    margin-top: -31px;
-    border-style: solid;
-    border-color: rgba(0, 0,0, .4);
-    border-width: 0 0 1px 0;
-    border-radius: 20px;
+    height: 12px;
+    border: 0;
+    box-shadow: inset 0 12px 12px -12px rgba(0, 0,0, .5);
 }
